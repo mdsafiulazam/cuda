@@ -1,0 +1,455 @@
+/*======================*/
+/*BASIC STEPE*/
+/*======================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+} 
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+     text-rendering: optimizeLegibility;
+}
+section{
+    padding: 8rem 0;
+}
+ul li{
+    list-style-type: none;
+}
+h1{
+    font-size: 4.2rem;
+    color:#fff;
+}
+/*======================*/
+/*REUSABLE COMPONENT*/
+/*======================*/
+.row{
+    max-width: 114rem;
+    margin:0 auto; 
+}
+.btn:link,
+.btn:visited,
+.btn{
+    font-size: 1.5rem;
+    background: #EB7D4B;
+    padding:1rem 2.5rem;
+    border-bottom: .3rem solid rgba(200, 106, 64, 0.3);
+    display: inline-block;
+    border-radius: .2rem;
+    color: #fff;
+}
+a:link,
+a:visited{
+    text-decoration: none;
+}
+h2{
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:#fff;
+    margin-top: 0;
+    margin-bottom:2rem;
+    text-align: center;
+}
+h2::after{
+    content: "";
+    display: block;
+    height: .3rem;
+    background:#fff;
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 1.4rem;   
+}
+h3{
+    font-size: 1.8rem;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+h4{
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    color:#29292a;
+    font-weight: 400;
+}
+p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color:#fff;
+    line-height: 2rem;  
+}
+.little-discription{
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 51%;
+    margin-left: 25%; 
+    color:#fff;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.box{
+    padding: 1%;
+}
+/*======================*/
+/*HEADER SECTION*/
+/*======================*/
+header{
+    width: 100%;
+background:linear-gradient(rgba(135, 80, 156, 0.9),rgba(135, 80, 156, 0.9)), url(img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    height: 85vh;
+    position: relative;
+}
+.logo{
+    height:3.5rem;
+    width: auto;
+    margin-top: 3.5rem;
+    float: left;     
+}
+/* NAVIGATION VAR */
+
+.main-nav{
+    float: right;
+    margin-top: 4rem;
+}
+.main-nav li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.main-nav li:last-child{
+    margin-right: 0;
+}
+header ul li a:link,
+header ul li a:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: .4rem 1rem;
+    transition: .3s;
+    border-radius: .2rem;
+     background: rgba(100, 58, 121, 0);
+    
+}
+header ul li:hover a:link,
+header ul li:hover a:visited{
+    background: rgba(100, 58, 121, 0.80)
+}
+.active a:link,
+.active a:visited{
+    background:rgba(100, 58, 121, 0.80);
+}
+.hero-text-box{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+}
+.btn-hero{
+    margin-top: 2.5rem; 
+}
+/*======================*/
+/*SERVICES SECTION*/
+/*======================*/
+.service-section{
+    background:linear-gradient(rgba(38, 192, 165, 0.9),rgba(38, 192, 165, 0.9)), url(img/services-bg.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    text-align: center;
+}
+.service-section h2::after{
+    background:rgba(20, 165, 140, 0.78);
+}
+.service-section h3{
+    margin-bottom: 2rem;
+    font-size:1.8rem;
+    font-weight: 400;
+}
+.service-section .icon{
+    height: 12rem;
+    margin-bottom: 4rem;
+    margin-top: 4.8rem;
+}
+/*======================*/
+/*TEAM SECTION*/
+/*======================*/
+.team-section{
+     background:linear-gradient(rgba(231, 239, 244, 0.88),rgba(231, 239, 244, 0.88)), url(img/team-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.team-section .little-discription{
+    color:#9099A8;
+}
+.team-section h2{
+    color:#3C4761;
+}
+.team-section h2::after{
+    background:#C8D9E5;;
+}
+
+.team-section h3{
+    color:#47526B;
+    margin-bottom: 1.5rem;
+    
+}
+.team-section span{
+    color:#A4D1EE;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+.team-section p{
+    color: #535E75;
+}
+.team-member{
+    width:20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+
+.social-link{
+    margin-top: 3.5rem;
+}
+.social-link ul li{
+   display: inline-block;
+    margin: 0.4rem;
+    
+}
+.social-link ul li a i{
+    color:#fff;
+}
+.team-section .social-link ul li a:link i::before{
+    background: #bdd1df;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    padding: .6rem;
+    font-size: 1.6rem;
+    display: inline-block;  
+    transition: .5s;
+}
+.team-section .social-link ul li a:hover i::before{
+    transform: rotate(360deg);
+    background: #393939;        
+}
+
+/*======================*/
+/*SKILLS SECTION*/
+/*======================*/
+.skills-section{
+    background:linear-gradient(rgba(244, 244, 244, 0.9),rgba(244, 244, 244, 0.9)),url(img/skill-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.skills-section h2{
+    color: #3C4761;
+}.skills-section .little-discription{
+    color:#9099A8;
+    margin-bottom: 4.5rem;
+}
+.skills-section h2::after{
+    background:#DFE8ED;
+}
+.skills-section h3{
+    color:#3C4761;
+}
+svg.radial-progress circle{
+    stroke-width:5;
+}
+svg.radial-progress text{
+    fill:#3C4761;
+}
+svg.web-design circle{
+    stroke:#30BAE7;
+}
+svg.graphic-design circle{
+    stroke:#EB7D4B;
+}
+svg.html-css circle{
+    stroke:#D74680;
+}
+svg.ui-ux circle{
+    stroke:#15C7A8;
+}
+/*======================*/
+/*PORTFOLIO SECTION*/
+/*======================*/
+.portfolio-section{
+    background:linear-gradient(rgba(255, 224, 163, 0.9),rgba(255, 224, 163, 0.9)),url(img/portfolio-bg.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio-section h2{
+    color:#3C4761;
+}
+.portfolio-section h2::after{
+    background:#E5C37F;
+}
+.portfolio-section .little-discription{
+    color: #3C4761;
+}
+.portfolio-filter{
+    margin: 4.5rem 0;
+}
+.portfolio-filter button{
+    padding: 1rem 1.4rem;
+    background:#EBC985;
+    border:0;
+    border-radius: .3rem;
+    margin-right: .3rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.portfolio-filter button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 .3rem .5rem rgba(60, 71, 97, 0.5);
+}
+.portfolio-img{
+    width: 100%;
+    height: 30rem;
+}
+.portfolio-section .col:nth-child(3){
+    margin-left: 0;
+}
+
+.portfolio-section .mixitup-control-active{
+  background: #fff;  
+}
+
+/*======================*/
+/*TESTIMONIAL SECTION*/
+/*======================*/
+.testimonial-section{
+    background:linear-gradient(rgba(217, 86, 138, 0.9),rgba(217, 86, 138, 0.9)),url(img/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.testimonial-section h2::after{
+  background:#B73C6D  
+}
+.client{
+    width:10rem;
+    float: left; 
+}
+.client img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.client-review{
+    width: 40rem;
+    float: right;
+}
+.client-review p{
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.client-review h3{
+margin-bottom: 1rem;
+}
+.client-review span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #EBC985;
+}
+.testimonial-section .col:nth-child(3),
+.testimonial-section .col:nth-child(4){
+    margin-top: 8rem;
+}
+.testimonial-section .col:nth-child(3){
+    margin-left: 0;
+}
+
+/*======================*/
+/*CONTACT SECTION*/
+/*======================*/
+.contant-section{
+    background:linear-gradient(rgba(80, 101, 163, 0.9),rgba(80, 101, 163, 0.9)),url(img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+contant-section h2::after{
+    background: #273a71;
+}
+.contant-section form{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5rem;
+}
+.contant-section input[type="text"],
+.contant-section input[type="text"],
+.contant-section textarea{
+    width:100%;
+    background:#273A71;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: 0;
+    border-radius: .3rem;
+    color:#fff;
+    margin: 1.5rem 0;
+    
+}
+.contant-section form ::placeholder{
+    color:#fff;
+}
+
+.contant-section .btn-submit{
+    border:0;
+    border-bottom: .3rem solid #299EC5;
+    background:#30BAE7;
+    margin-top: 3rem;
+}
+.contant-section .btn-submit:hover{
+    cursor: pointer;
+}
+
+/*======================*/
+/*FOOTER SECTION*/
+/*======================*/
+
+.footer-section{
+    background: #344B8E;
+    text-align: center;
+    padding: 2rem;
+    border-top: .2rem solid rgba(60, 84, 153, 0.9);
+}
+.footer-section ul li{
+    display: inline-block; 
+    margin-right: 3rem;
+}
+.footer-section ul li a:link,
+.footer-section ul li a:visited{
+    font-size: 2rem;
+    font-weight: 400;
+    color:#fff;
+    
+}
+.footer-section ul li a.active{
+    color:#30BAE7;
+}
+
+
+
+
+
